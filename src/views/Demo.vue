@@ -2,9 +2,8 @@
   <div>
     子组件demo
     <el-button @click="gets">子组件按钮</el-button>
-    <slot />
-    <slot>
-    </slot>
+    <slot></slot>
+    <slot name="qwe"></slot>
   </div>
 </template>
 <script>

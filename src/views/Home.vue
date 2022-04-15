@@ -13,11 +13,10 @@
     <el-button @click="del">删除</el-button>
     <h1>props---------------------------------------------------------</h1>
     <Demo msg1='11' @getdata='showMsg'>
-      <!-- 插槽 -->
       <template v-slot:qwe>
-        <div>哈哈哈哈1111</div>
+        <div>具名插槽值1111111</div>
       </template>
-      <span>急急急</span>
+      <div>默认插槽值2222222</div>
     </Demo>
   </div>
 </template>
