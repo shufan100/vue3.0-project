@@ -4,9 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "build:test": "vue-cli-service build --mode test",
+    "build:uat": "vue-cli-service build --mode uat",
+    "build:production": "vue-cli-service build --mode production"
   },
   "dependencies": {
+    "axios": "^0.26.1",
     "core-js": "^3.6.5",
     "element-plus": "^2.1.9",
     "vue": "^3.0.0",
