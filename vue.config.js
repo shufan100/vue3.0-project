@@ -6,7 +6,7 @@ module.exports = {
   //     entry: 'src/main.ts' //入口
   //   }
   // },
-  lintOnSave: false, //关闭语法检查
+  lintOnSave: true, //关闭语法检查
   // 代理
   devServer: {
     open: true, // 是否自动弹出浏览器页面

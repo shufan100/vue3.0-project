@@ -14,6 +14,15 @@ import 'element-plus/dist/index.css';
 const app = createApp(App);
 console.log('createApp(App):', app);
 
+// 全局属性配置 globalProperties 代替vue2的propotype
+app.config.globalProperties.$name = '全局名称'
+// 全局方法
+app.config.globalProperties.$winFilter = function (val) {
+  console.log(val, '==-')
+  return val + 100
+}
+
+
 // 注册插件
 app.use(ElementPlus);
 app.use(store);
