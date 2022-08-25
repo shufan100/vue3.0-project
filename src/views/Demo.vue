@@ -12,8 +12,7 @@ export default {
   // 接收props值，不然setup的props接收不到值
   props: ['msg1'],
   emits: ['getdata'], // 接收方法，可省略
-  setup (props, context) {
-
+  setup(props, context) {
     // console.log(props.msg1, context.attrs.msg1)
     // props--------------------------------
     // console.log("props:", props)
@@ -32,15 +31,9 @@ export default {
     // slots：插槽
     // console.log("context.slots:", context.slots)
 
-
-
-
-
-
     return {
       gets
     }
-
-  },
+  }
 }
 </script>
